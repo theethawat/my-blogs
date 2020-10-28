@@ -6,6 +6,10 @@ Social, History and Culture blog from me, to let me talk and let me share.
 
 Bloging with Gatsby, React, Gatsby-theme-blog and Tailwind CSS. Bloging with Markdown and manage website by shadowing the gatsby-theme-blog according to https://github.com/gatsbyjs/themes/tree/master/packages/gatsby-theme-blog
 
+Init this program by
+
+    npm install && npm run buildcss
+
 ## Shadowing
 
 Shadowing is the method that you have no `.js` file but you know how it look like (In GitHub Repository Seen above) and if you want to edit any components like I want to edit page.js, see what it located and make a new `page.js` so the gatsby compiler will use yours instead of use `page.js` from library (it's located on `node_modules`).

@@ -6,7 +6,8 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "buildcss":"npx tailwindcss build .\\src\\gatsby-theme-blog\\components\\index.css  -o .\\src\\gatsby-theme-blog\\components\\output.css"
   },
   "license": "0BSD",
   "dependencies": {
