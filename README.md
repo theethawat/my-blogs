@@ -1,3 +1,25 @@
+# TDC-Space (TDC-Sped) Blog
+
+Social, History and Culture blog from me, to let me talk and let me share.
+
+## Development
+
+Bloging with Gatsby, React, Gatsby-theme-blog and Tailwind CSS. Bloging with Markdown and manage website by shadowing the gatsby-theme-blog according to https://github.com/gatsbyjs/themes/tree/master/packages/gatsby-theme-blog
+
+## Shadowing
+
+Shadowing is the method that you have no `.js` file but you know how it look like (In GitHub Repository Seen above) and if you want to edit any components like I want to edit page.js, see what it located and make a new `page.js` so the gatsby compiler will use yours instead of use `page.js` from library (it's located on `node_modules`).
+
+Method that I recommend, when you want to overiding some file, you should copy that file code from Gatsby Github (above link) and overide it or edit it. You will know what content in this page dependence, library that depend etc. , I think this methodology is good.
+
+## Styling
+
+Use Tailwind CSS, you must config `tailwind.config.js` after that complie with **Tailwind CLI** to execute them to css file and use like css file according to tailwind css document.
+
+Gatsby Theme Blog Doc as seen below
+
+---
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
