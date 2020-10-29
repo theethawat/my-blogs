@@ -34,20 +34,26 @@ const Post = ({
     <main>
       <article>
         <header>
-          <PostHero post={post} />
-          <PostTitle>{post.title}</PostTitle>
-          <PostDate>{post.date}</PostDate>
-        </header>
-        <section>
-          <div className="ml-4 mt-4 mr-4 pr-6 ">
-            <div className="prose min-w-full">
-              <MDXRenderer>{post.body}</MDXRenderer>
+          <section className="hero tdc-hero is-bold mb-5">
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title  has-text-white is-2 ">{post.title}</h1>
+                <h2 className="subtitle  has-text-white ">{post.date}</h2>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section className="section content-section">
+            <div className="container content ">
+              <PostHero post={post} />
+              <div className="prose min-w-full mt-4">
+                <MDXRenderer>{post.body}</MDXRenderer>
+              </div>
+              <PostFooter {...{ previous, next }} />
+            </div>
+          </section>
+        </header>
       </article>
     </main>
-    <PostFooter {...{ previous, next }} />
   </Layout>
 )
 

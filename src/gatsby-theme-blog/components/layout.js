@@ -1,5 +1,5 @@
 import React from "react"
-import "./output.css"
+import "bulma/css/bulma.min.css"
 import "./index.css"
 import { Link } from "gatsby"
 const Layout = ({ location, title, children }) => {
@@ -7,54 +7,54 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
-  if (isRootPath) {
-    header = (
-      <div className="box-content h-20 w-43 p-4">
-        <p className="text-3xl mitr">
-          <Link to="/">{title}</Link>
-        </p>
-
-        <p className="text-gray-500 mitr-light">
-          ขอให้เป็ดได้พูด เราไม่ใช่คนที่รู้เยอะ หรือเก่งจริง
-          แต่ขอให้ได้แสดงความคิดเห็น เผื่อข้อมูลเล็กๆ น้อยๆ
-          ของเราจะมีประโยชน์กับส่วนรวมได้บ้าง{" "}
-        </p>
-      </div>
-    )
-  } else {
-    header = (
-      <div className="box-content h-20 w-43 p-4">
-        {" "}
-        <p className="text-3xl mitr">
-          <Link className="header-link-home" to="/">
+  header = (
+    <div>
+      <nav
+        className="navbar mitr is-dark "
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div className="navbar-brand">
+          <Link className="navbar-item subtitle is-4 pb-0 mb-2" to="/">
             {title}
           </Link>
-        </p>
-        <p className="text-gray-500 mitr-light">
-          ขอให้เป็ดได้พูด เราไม่ใช่คนที่รู้เยอะ หรือเก่งจริง
-          แต่ขอให้ได้แสดงความคิดเห็น เผื่อข้อมูลเล็กๆ น้อยๆ
-          ของเราจะมีประโยชน์กับส่วนรวมได้บ้าง{" "}
-        </p>
-      </div>
-    )
-  }
+          <a
+            role="button"
+            className="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
+            <Link className="navbar-item"></Link>
+          </div>
+        </div>
+      </nav>
+      <h1 className=" mitr"></h1>
+    </div>
+  )
 
   return (
-    <div
-      className="global-wrapper bg-gray-100 min-h-screen"
-      data-is-root-path={isRootPath}
-    >
-      <div className="container mx-auto">
-        <header className="global-header">{header}</header>
-      </div>
-      <div className="container mx-auto px-4 bg-white ">
+    <div className="global-wrapper global-body " data-is-root-path={isRootPath}>
+      <header className="global-header">{header}</header>
+
+      <section className="mb-5">
         <main>{children}</main>
-        <footer>
+      </section>
+
+      <footer className="footer has-background-dark ">
+        <div className="content has-text-centered has-text-white ">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   )
 }

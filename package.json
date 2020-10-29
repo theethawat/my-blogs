@@ -7,11 +7,12 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "buildcss":"npx tailwindcss build .\\src\\gatsby-theme-blog\\components\\index.css  -o .\\src\\gatsby-theme-blog\\components\\output.css"
+    "buildcss": "npx tailwindcss build .\\src\\gatsby-theme-blog\\components\\index.css  -o .\\src\\gatsby-theme-blog\\components\\output.css"
   },
   "license": "0BSD",
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
+    "bulma": "^0.9.1",
     "gatsby": "^2.24.79",
     "gatsby-theme-blog": "^2.0.2",
     "react": "^16.12.0",

@@ -5,7 +5,8 @@ const PostHero = ({ post }) => (
   <>
     {post?.image?.childImageSharp && (
       <Image
-        className="h-48 bg-auto bg-center"
+        className="img-fluid bg-auto bg-center"
+        style={{ maxHeight: "400px" }}
         fluid={post.image.childImageSharp.fluid}
         alt={post.imageAlt ? post.imageAlt : post.excerpt}
       />
