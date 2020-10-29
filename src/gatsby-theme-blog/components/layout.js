@@ -50,9 +50,17 @@ const Layout = ({ location, title, children }) => {
 
       <footer className="footer has-background-dark ">
         <div className="content has-text-centered has-text-white ">
-          © {new Date().getFullYear()}, Built with
+          CC 4.0 BY {new Date().getFullYear()}, เพราะเราเชื่อว่าการพูดคุยกัน
+          จะส่งผลดี และเข้าใจกันมากขึ้นเสมอ <br />
+          The Duck Creator - Create for Better{" "}
+          <a className="has-text-light" href="https://theduckcreator.in.th">
+            www.theduckcreator.in.th
+          </a>{" "}
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Built with {` `}
+          <a className="has-text-light" href="https://www.gatsbyjs.com">
+            Gatsby
+          </a>
         </div>
       </footer>
     </div>

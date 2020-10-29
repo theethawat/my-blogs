@@ -7,7 +7,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
       <h2 className=" subtitle is-3  ">
         <Link to={slug} className="has-text-primary-dark">
           {" "}
-          {">>"} {title || slug}
+          {"#"} {title || slug}
         </Link>
       </h2>
       <small>{date}</small>

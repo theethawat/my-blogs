@@ -10,7 +10,7 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
     <section className="hero is-primary is-bold ">
       <div className="hero-body tdc-hero">
         <div className="container">
-          <h1 className="title mitr is-1 "> {siteTitle} </h1>
+          <h1 className="title mitr is-1 "> // {siteTitle} </h1>
           <h2 className="subtitle">ขอให้เป็ดได้พูด ขอมีส่วนร่วมบ้าง</h2>
         </div>
       </div>
