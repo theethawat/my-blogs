@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Maitree&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
 html,
 .global-body {
   background-color: #ffffff;
@@ -24,4 +24,8 @@ html,
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mitr {
+  font-family: "mitr", sans-serif;
 }

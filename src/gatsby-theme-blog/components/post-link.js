@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const PostLink = ({ title, slug, date, excerpt }) => (
   <article className="mb-2 pb-3">
     <header>
-      <h2 className=" subtitle is-3  ">
+      <h2 className="mitr subtitle is-3  ">
         <Link to={slug} className="has-text-primary-dark">
           {" "}
           {"#"} {title || slug}

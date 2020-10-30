@@ -37,8 +37,10 @@ const Post = ({
           <section className="hero tdc-hero is-bold mb-5">
             <div className="hero-body">
               <div className="container">
-                <h1 className="title  has-text-white is-2 ">{post.title}</h1>
-                <h2 className="subtitle  has-text-white ">{post.date}</h2>
+                <h1 className="subtitle mitr has-text-white is-2 mb-0">
+                  {post.title}
+                </h1>
+                <h2 className="subtitle mt-1 has-text-white ">{post.date}</h2>
               </div>
             </div>
           </section>

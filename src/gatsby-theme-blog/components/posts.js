@@ -1,5 +1,5 @@
 import React from "react"
-
+import Logo from "./logo.png"
 import Layout from "./layout"
 import SEO from "./seo"
 import PostList from "./post-list"
@@ -10,8 +10,17 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
     <section className="hero is-primary is-bold ">
       <div className="hero-body tdc-hero">
         <div className="container">
-          <h1 className="title mitr is-1 "> // {siteTitle} </h1>
-          <h2 className="subtitle">ขอให้เป็ดได้พูด ขอมีส่วนร่วมบ้าง</h2>
+          <div className="columns is-mobile">
+            <div className="column is-one-quarter">
+              <img src={Logo} className="image " style={{ height: "120px" }} />
+            </div>
+            <div className="column ">
+              <h1 className="title  is-1 "> // {siteTitle} </h1>
+              <h2 className="mitr subtitle">
+                ขอให้เป็ดได้พูด ขอมีส่วนร่วมบ้าง
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>

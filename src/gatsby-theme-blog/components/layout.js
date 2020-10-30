@@ -10,7 +10,7 @@ const Layout = ({ location, title, children }) => {
   header = (
     <div>
       <nav
-        className="navbar mitr is-dark "
+        className="navbar  is-dark "
         role="navigation"
         aria-label="main navigation"
       >
@@ -36,7 +36,6 @@ const Layout = ({ location, title, children }) => {
           </div>
         </div>
       </nav>
-      <h1 className=" mitr"></h1>
     </div>
   )
 
