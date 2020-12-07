@@ -47,7 +47,7 @@ const Layout = ({ location, title, children }) => {
         <main>{children}</main>
       </section>
 
-      <footer className="footer has-background-dark ">
+      <footer className="footer has-background-dark mitr ">
         <div className="content has-text-centered has-text-white ">
           CC 4.0 BY {new Date().getFullYear()}, เพราะเราเชื่อว่าการพูดคุยกัน
           จะส่งผลดี และเข้าใจกันมากขึ้นเสมอ <br />

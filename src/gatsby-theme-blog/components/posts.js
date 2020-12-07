@@ -26,7 +26,12 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
     </section>
     <section className="content-section section">
       <div className="container content">
-        <PostList posts={posts} />
+        <div className="columns">
+          <div className="column is-8">
+            <PostList posts={posts} />
+          </div>
+          <div className="column is-4"></div>
+        </div>
       </div>
     </section>
   </Layout>
