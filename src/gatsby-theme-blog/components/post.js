@@ -36,11 +36,13 @@ const Post = ({
         <header>
           <section className="hero tdc-hero is-bold mb-5">
             <div className="hero-body">
-              <div className="container">
-                <h1 className="subtitle mitr has-text-white is-2 mb-0">
+              <div className="container py-4">
+                <h1 className="subtitle kanit has-text-white is-3 mb-0">
                   {post.title}
                 </h1>
-                <h2 className="subtitle mt-1 has-text-white ">{post.date}</h2>
+                <h2 className="subtitle mt-1 has-text-white kanit-light ">
+                  {post.date}
+                </h2>
               </div>
             </div>
           </section>
