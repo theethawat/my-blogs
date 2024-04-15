@@ -7,19 +7,25 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `TDCSpace`,
+    title: `Theethawat Blogs`,
     author: `Theethawat Savastham`,
-    description: ` ขอให้เป็ดได้พูด เราไม่ใช่คนที่รู้เยอะ หรือเก่งจริง
-    แต่ขอให้ได้แสดงความคิดเห็น เผื่อข้อมูลเล็กๆ น้อยๆ
-    ของเราจะมีประโยชน์กับส่วนรวมได้บ้าง.`,
+    description: `Creating and thinking space of Tin Theethawat /> Savastham`,
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/mrtintheethawat`,
+        name: `website`,
+        url: `https://theethawat.dev`,
       },
       {
         name: `github`,
         url: `https://github.com/theethawat`,
+      },
+      {
+        name: `instagram`,
+        url: `https://instragram.com/tin_savastham`,
+      },
+      {
+        name: `facebook`,
+        url: `https://facebook.com/tin.savastham`,
       },
     ],
   },

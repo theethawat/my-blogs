@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider &&  gatsby   develop ",
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",

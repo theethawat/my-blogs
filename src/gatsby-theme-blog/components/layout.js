@@ -2,6 +2,7 @@ import React from "react"
 import "bulma/css/bulma.min.css"
 import "./index.css"
 import { Link } from "gatsby"
+import Logo from "./logo.png"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -9,14 +10,15 @@ const Layout = ({ location, title, children }) => {
 
   header = (
     <div>
-      <nav
-        className="navbar  is-dark "
-        role="navigation"
-        aria-label="main navigation"
-      >
+      <nav className="navbar " role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link className="navbar-item subtitle is-4 pb-0 mb-2" to="/">
-            {title}
+            <img
+              src={Logo}
+              alt={title}
+              className="image"
+              style={{ height: "48px" }}
+            />
           </Link>
           <a
             role="button"
@@ -41,23 +43,23 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper global-body " data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header ">{header}</header>
 
       <section className="mb-5">
         <main>{children}</main>
       </section>
 
-      <footer className="footer has-background-dark mitr ">
-        <div className="content has-text-centered has-text-white ">
-          CC 4.0 BY {new Date().getFullYear()}, เพราะเราเชื่อว่าการพูดคุยกัน
-          จะส่งผลดี และเข้าใจกันมากขึ้นเสมอ <br />
-          The Duck Creator - Create for Better{" "}
-          <a className="has-text-light" href="https://theduckcreator.in.th">
-            www.theduckcreator.in.th
-          </a>{" "}
-          {` `}
-          Built with {` `}
-          <a className="has-text-light" href="https://www.gatsbyjs.com">
+      <footer className="footer has-background-light kanit-light   ">
+        <div className="content has-text-centered has-text-black is-size-6	">
+          Creating with ❤️ in {new Date().getFullYear()} By <b>Theethawat</b> &{" "}
+          <b>
+            <a className="has-text-dark" href="https://theduckcreator.in.th">
+              The Duck Creator
+            </a>{" "}
+          </b>
+          <br />
+          Licensed by Creative Commons 4.0 BY, Built with {` `}
+          <a className="has-text-link" href="https://www.gatsbyjs.com">
             Gatsby
           </a>
         </div>

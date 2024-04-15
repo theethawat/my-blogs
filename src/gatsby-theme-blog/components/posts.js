@@ -1,5 +1,5 @@
 import React from "react"
-import Logo from "./logo.png"
+import Logo from "./logowhite.png"
 import Layout from "./layout"
 import SEO from "./seo"
 import PostList from "./post-list"
@@ -7,18 +7,12 @@ import PostList from "./post-list"
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
   <Layout location={location} title={siteTitle}>
     <SEO title="Home" />
-    <section className="hero is-primary is-bold ">
+    <section className="hero is-primary is-bold kanit ">
       <div className="hero-body tdc-hero">
         <div className="container">
-          <div className="columns is-mobile">
-            <div className="column is-one-quarter">
-              <img src={Logo} className="image " style={{ height: "120px" }} />
-            </div>
-            <div className="column ">
-              <h1 className="title  is-1 "> // {siteTitle} </h1>
-              <h2 className="mitr subtitle">
-                ขอให้เป็ดได้พูด ขอมีส่วนร่วมบ้าง
-              </h2>
+          <div className="columns is-mobile justify-items-end">
+            <div className="column w-1/3">
+              <img src={Logo} className="image " style={{ height: "90px" }} />
             </div>
           </div>
         </div>
