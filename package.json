@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider &&  gatsby   develop ",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider gatsby build",
     "clean": "gatsby clean",
     "buildcss": "npx tailwindcss build .\\src\\gatsby-theme-blog\\components\\index.css  -o .\\src\\gatsby-theme-blog\\components\\output.css"
   },
   "license": "0BSD",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/typography": "^0.2.0",
     "bulma": "^0.9.1",
     "gatsby": "^2.24.79",

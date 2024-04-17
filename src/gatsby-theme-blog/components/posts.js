@@ -19,7 +19,7 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
       </div>
     </section>
     <section className="content-section section">
-      <div className="container content">
+      <div className="container ">
         <div className="columns">
           <div className="column is-8">
             <PostList posts={posts} />
