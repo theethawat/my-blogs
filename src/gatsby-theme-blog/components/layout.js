@@ -11,13 +11,13 @@ const Layout = ({ location, title, children }) => {
   header = (
     <div>
       <nav className="navbar " role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
+        <div className="navbar-brand py-1">
           <Link className="navbar-item subtitle is-4 pb-0 mb-2" to="/">
             <img
               src={Logo}
               alt={title}
               className="image"
-              style={{ height: "48px" }}
+              style={{ height: "60px" }}
             />
           </Link>
           <a
@@ -33,8 +33,13 @@ const Layout = ({ location, title, children }) => {
           </a>
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <Link className="navbar-item"></Link>
+          <div className="navbar-end kanit-light">
+            <Link className="navbar-item is-size-6" to="/">
+              หน้าแรก
+            </Link>{" "}
+            <a className="navbar-item is-size-6" href="https://theethawat.dev">
+              เว็บไซต์หลัก
+            </a>
           </div>
         </div>
       </nav>
@@ -58,6 +63,10 @@ const Layout = ({ location, title, children }) => {
             </a>{" "}
           </b>
           <br />
+          Hosted on{"  "}
+          <a className="has-text-link" href="https://pages.cloudflare.com/">
+            Cloudflare Pages
+          </a>{" "}
           Licensed by Creative Commons 4.0 BY, Built with {` `}
           <a className="has-text-link" href="https://www.gatsbyjs.com">
             Gatsby

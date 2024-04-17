@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PostLink = ({ title, slug, date, excerpt }) => (
+const PostLink = ({ title, slug, date, excerpt, category }) => (
   <article className="mb-2 pb-3 ">
     <header className="mb-4">
-      <h2 className="kanit subtitle is-3 mb-2 ">
+      <h2 className="kanit title is-4 mb-2 ">
         <Link to={slug} className="has-text-primary">
           {title || slug}
         </Link>
@@ -14,6 +14,7 @@ const PostLink = ({ title, slug, date, excerpt }) => (
     <div className="content">
       <p>{excerpt}</p>
     </div>
+    <div>{category}</div>
     <hr />
   </article>
 )

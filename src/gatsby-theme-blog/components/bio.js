@@ -28,6 +28,10 @@ export default function Bio(params) {
               ที่สนใจทั้งเรื่องคอมพิวเตอร์ ความคิด Culture และ
               เรื่องราวรอบตัวต่าง
             </p>
+            <p>
+              Visit My Website at{" "}
+              <a herf="https://theethawat.dev">theethawat.dev</a>
+            </p>
           </div>
         </div>
       </div>
